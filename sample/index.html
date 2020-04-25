@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  <title>bs4-modal-mvc</title>
+  <link rel="stylesheet"
+    href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="site.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand"
+      href="#">Navbar</a>
+    <button class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"
+      id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active"
+          href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link"
+          href="#">Features</a>
+        <a class="nav-item nav-link"
+          href="#">Pricing</a>
+        <a class="nav-item nav-link disabled"
+          href="#"
+          tabindex="-1"
+          aria-disabled="true">Disabled</a>
+      </div>
+    </div>
+  </nav>
+  <!-- /navbar -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="border-bottom mb-4 text-dark">Title</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-2">
+        <a href="javascript:void(0);"
+          class="btn btn-primary btn-sm smaller"
+          data-ajax-url="/CompanyCreate"
+          data-title="Yeni: Firma"
+          data-modal-create><i class="fa fa-plus mr-2"></i>Yeni Ekle</a>
+        <a href=""></a>
+      </div>
+      <div class="col-lg-4 col-md-6 offset-4 float-right">
+        <div class="input-group mb-3">
+          <input type="text"
+            class="form-control smaller"
+            placeholder="arama"
+            aria-label="arama"
+            aria-describedby="button-addon2"
+            data-search-input />
+          <div class="input-group-append">
+            <a class="btn btn-secondary smaller"
+              href="javascript:void(0);"
+              data-url="/CompanyIndex"
+              data-search-button><i class="fa fa-search mr-2"></i>Ara</a>
+            <a class="btn btn-dark smaller"
+              href="/CompanyIndex"><i class="fa fa-times mr-2"></i>Temizle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-sm table-hover table-striped text-center small">
+        <thead>
+          <tr>
+            <th>
+              Type
+            </th>
+            <th>
+              Company Name
+            </th>
+            <th>
+              Commercial Title
+            </th>
+            <th>
+              E-Mail
+            </th>
+            <th>
+              Phone
+            </th>
+            <th>
+              Total
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Kurumsal
+            </td>
+            <td>
+              My App 1
+            </td>
+            <td>
+              My Company ltd.
+            </td>
+            <td>
+              abc@gmail.com
+            </td>
+            <td>
+              555 888 99 99
+            </td>
+            <td>
+              10.00
+            </td>
+            <td class="text-right">
+              <div class="btn-group"
+                role="group">
+                <div class="btn-group"
+                  role="group">
+                  <button type="button"
+                    class="btn btn-secondary dropdown-toggle btn-sm smaller"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"></button>
+                  <div class="dropdown-menu">
+                    <a href="javascript:void(0);"
+                      data-ajax-url="/CompanyEdit/123"
+                      data-title="Düzenle"
+                      class="dropdown-item btn-sm smaller"
+                      data-modal-edit>
+                      <i class="fa fa-edit mr-2"></i>Düzenle
+                    </a>
+                    <a href="javascript:void(0);"
+                      data-ajax-url="/CompanyDetails/123"
+                      data-title="Detay"
+                      class="dropdown-item smaller"
+                      data-modal-detail>
+                      <i class="fa fa-info-circle mr-2"></i>Detay
+                    </a>
+                    <a href="javascript:void(0);"
+                      data-redirect-url="/CompanyDelete/123"
+                      data-title="Sil"
+                      data-text="Silmek istediğinize emin misiniz?"
+                      class="dropdown-item smaller text-danger"
+                      data-modal-delete>
+                      <i class="fa fa-trash mr-2"></i>Sil
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Kurumsal
+            </td>
+            <td>
+              My App 2
+            </td>
+            <td>
+              My Company 2 ltd.
+            </td>
+            <td>
+              abc@gmail.com
+            </td>
+            <td>
+              555 888 99 99
+            </td>
+            <td>
+              20.00
+            </td>
+            <td class="text-right">
+              <div class="btn-group"
+                role="group">
+                <div class="btn-group"
+                  role="group">
+                  <button type="button"
+                    class="btn btn-secondary dropdown-toggle btn-sm smaller"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"></button>
+                  <div class="dropdown-menu">
+                    <a href="javascript:void(0);"
+                      data-ajax-url="/CompanyEdit/124"
+                      data-title="Düzenle"
+                      class="dropdown-item btn-sm smaller"
+                      data-modal-edit>
+                      <i class="fa fa-edit mr-2"></i>Düzenle
+                    </a>
+                    <a href="javascript:void(0);"
+                      data-ajax-url="/CompanyDetails/124"
+                      data-title="Detay"
+                      class="dropdown-item smaller"
+                      data-modal-detail>
+                      <i class="fa fa-info-circle mr-2"></i>Detay
+                    </a>
+                    <a href="javascript:void(0);"
+                      data-redirect-url="/CompanyDelete/124"
+                      data-title="Sil"
+                      data-text="Silmek istediğinize emin misiniz?"
+                      class="dropdown-item smaller text-danger"
+                      data-modal-delete>
+                      <i class="fa fa-trash mr-2"></i>Sil
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Kurumsal
+            </td>
+            <td>
+              My App 3
+            </td>
+            <td>
+              My Company 3 ltd.
+            </td>
+            <td>
+              abc@gmail.com
+            </td>
+            <td>
+              555 888 99 99
+            </td>
+            <td>
+              30.00
+            </td>
+            <td class="text-right">
+              <div class="btn-group"
+                role="group">
+                <div class="btn-group"
+                  role="group">
+                  <button type="button"
+                    class="btn btn-secondary dropdown-toggle btn-sm smaller"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"></button>
+                  <div class="dropdown-menu">
+                    <a href="javascript:void(0);"
+                      data-ajax-url="/CompanyEdit/125"
+                      data-title="Düzenle"
+                      class="dropdown-item btn-sm smaller"
+                      data-modal-edit>
+                      <i class="fa fa-edit mr-2"></i>Düzenle
+                    </a>
+                    <a href="javascript:void(0);"
+                      data-ajax-url="/CompanyDetails/125"
+                      data-title="Detay"
+                      class="dropdown-item smaller"
+                      data-modal-detail>
+                      <i class="fa fa-info-circle mr-2"></i>Detay
+                    </a>
+                    <a href="javascript:void(0);"
+                      data-redirect-url="/CompanyDelete/125"
+                      data-title="Sil"
+                      data-text="Silmek istediğinize emin misiniz?"
+                      class="dropdown-item smaller text-danger"
+                      data-modal-delete>
+                      <i class="fa fa-trash mr-2"></i>Sil
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/jquery-form/dist/jquery.form.min.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../index.umd.js"></script>
+
+  <script>
+    $(function () {
+      bs4ModalMvc.handleDataModalDetail();
+      bs4ModalMvc.handleDataModalDelete();
+      bs4ModalMvc.handleDataModalCreate();
+      bs4ModalMvc.handleDataModalEdit();
+
+      bs4ModalMvc.handleSearchForm();
+    });
+  </script>
+</body>
+
+</html>

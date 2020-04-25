@@ -1,6 +1,6 @@
 {
   "name": "bs4-modal-mvc",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "BS4 kullanan bir ASPNET MVC projesi için modal içinde CRUD yapmayı sağlayan js kodlarını içeren kütüphane.",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,13 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/muratbaseren/bs4-modal-mvc.git"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "jquery-form": "^4.2.2",
+    "bootstrap": "^4.4.1",
+    "font-awesome": "4.7.0",
+    "popper.js": "1.16.1"
   },
   "keywords": [
     "bootstrap4",

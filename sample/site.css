@@ -1,0 +1,14 @@
+
+.smaller {
+    font-size: 0.8em;
+}
+
+.smallest {
+    font-size: 0.6em;
+}
+
+form span.field-validation-error {
+    font-size: 0.7em;
+    margin-bottom: -6px;
+    display: block;
+}
